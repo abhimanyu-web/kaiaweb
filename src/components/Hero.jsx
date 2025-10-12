@@ -173,8 +173,7 @@ export default function Hero() {
           className="h-[150px] sm:h-[200px] md:h-[300px] w-auto object-contain mx-auto"
         >
           <source src={logoVideoWebm} type="video/webm" />
-          <source src={logoVideoMov} type='video/mp4; codecs="hvc1"' />
-
+          
           Your browser does not support the video tag.
         </video>
 
