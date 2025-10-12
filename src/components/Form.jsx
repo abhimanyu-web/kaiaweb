@@ -34,7 +34,7 @@ export default function Form({ isFormOpen, isFormClose }) {
       const pageUrl = window.location.href; 
       const payload = { name, email, phoneNumber,pageUrl }
 
-      const response = await fetch('https://flow.zoho.com/899071440/flow/webhook/incoming?zapikey=1001.032298ac244ab16396c1ccb1793332ca.a6728157ec735e0e3955e6c335e8a9a2&isdebug=false', {
+      const response = await fetch('/api/send-webhook', {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
