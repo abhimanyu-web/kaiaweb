@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import logoVideo from "../assets/vedio/kaira_logo_ved.webm";
+import logoVideoWebm from "../assets/vedio/kaira_logo_ved.webm";
+import logoVideoMov from "../assets/vedio/Kaira_logo_mac.mov";
 import background from "../assets/images/Hero-background.png";
 import ImageSlider from "./ImageSlider";
 
@@ -141,11 +143,12 @@ export default function Hero() {
           loop
           muted
           playsInline
-          className="h-[150px] sm:h-[200px] md:h-[300px] w-auto object-contain mx-auto"
+          className="h-[150px] sm:h-[200px] md:h-[300px] w-auto object-contain"
         >
-          <source src={logoVideo} type="video/webm" />
-          Your browser does not support the video tag.
+          <source src={logoVideoWebm} type="video/webm" />
+          <source src={logoVideoMov} type='video/mp4; codecs="hvc1"' />
         </video>
+
 
         <h2 className="font-primary text-base sm:text-xl md:text-2xl lg:text-3xl text-brown mt-4 tracking-tighter px-4 sm:px-10">
           {currentContent.h2}
