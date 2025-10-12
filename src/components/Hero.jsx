@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import logoVideo from "../assets/vedio/kaira_logo_ved.webm";
 import logoVideoWebm from "../assets/vedio/kaira_logo_ved.webm";
-import logoVideoMov from "../assets/vedio/Kaira_logo_mac.mov";
+import logoVideoMov from "../assets/vedio/Kaira_logo_mac.mp4";
 import background from "../assets/images/Hero-background.png";
 import ImageSlider from "./ImageSlider";
 
