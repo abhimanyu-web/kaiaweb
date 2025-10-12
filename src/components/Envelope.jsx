@@ -128,7 +128,7 @@ export default function EnvelopeSlider() {
   const textEnd = "translate-y-0 translate-x-0 rotate-8 opacity-100";
 
   const textClasses = `
-    absolute top-[29%] right-[31%] h-[450px] w-[300px] z-50 
+    absolute top-[29%] right-[31%] h-[450px] w-[300px] z-40 
     ${transitionClasses} delay-300 
     ${hasAnimated ? textEnd : textStart}
   `;
