@@ -166,15 +166,17 @@ export default function Hero() {
       }} className="md:hidden p-5 flex flex-col items-center">
         <div className={`z-10 max-w-5xl ${textTransitionClass}`}>
         <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="h-[150px] sm:h-[200px] md:h-[300px] w-auto object-contain mx-auto"
-        >
-          <source src={logoVideo} type="video/webm" />
-          Your browser does not support the video tag.
-        </video>
+  autoPlay
+  loop
+  muted
+  playsInline
+  className="h-[150px] sm:h-[200px] md:h-[300px] w-auto object-contain mx-auto"
+>
+  <source src={logoVideoWebm} type="video/webm" />
+  <source src={logoVideoMov} type='video/mp4; codecs="hvc1"' />
+  Your browser does not support the video tag.
+</video>
+
         <div>
           <h2 className="font-primary text-base text-center sm:text-xl md:text-2xl lg:text-3xl text-brown mt-4 tracking-tighter px-4 sm:px-10">
           {currentContent.h2}
