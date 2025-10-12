@@ -37,10 +37,6 @@ const HERO_CONTENT = [
     h2: "Imagine mornings that smell of coffee blossoms, afternoons that echo with laughter in courtyards, and nights where the stars still put on a show.",
     h1: "Welcome to Kaira",
   },
-  {
-    h2: "ಕಾಫಿ ಹೂವುಗಳ ವಾಸನೆ ಬೀರುವ ಬೆಳಿಗ್ಗೆಗಳನ್ನು, ಅಂಗಳದಲ್ಲಿ ನಗುವಿನೊಂದಿಗೆ ಪ್ರತಿಧ್ವನಿಸುವ ಮಧ್ಯಾಹ್ನಗಳನ್ನು ಮತ್ತು ನಕ್ಷತ್ರಗಳು ಇನ್ನೂ ಪ್ರದರ್ಶನ ನೀಡುವ ರಾತ್ರಿಗಳನ್ನು ಕಲ್ಪಿಸಿಕೊಳ್ಳಿ.",
-    h1: "ಕೈರಾಗೆ ಸ್ವಾಗತ",
-  },
 ];
 
 export default function Hero() {
