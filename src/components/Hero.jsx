@@ -143,7 +143,7 @@ export default function Hero() {
           loop
           muted
           playsInline
-          className="h-[150px] sm:h-[200px] md:h-[300px] w-auto object-contain"
+          className="h-[150px] sm:h-[200px] md:h-[300px] w-auto object-contain mx-auto"
         >
           <source src={logoVideoWebm} type="video/webm" />
           <source src={logoVideoMov} type='video/mp4; codecs="hvc1"' />
