@@ -8,7 +8,7 @@ import GetInTouch from './components/GetInTouch';
 import Footer from './components/Footer';
 import Logo from './components/Logo';
 import Envelope from './components/Envelope';
-import VideoAlphaTest from './components/VideoAlphaTest';
+import VideoAlphaTest from './components/VideoalphaTest';
 
 function App() {
 
