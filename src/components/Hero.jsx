@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import logoVideo from "../assets/vedio/kaira_logo_ved.webm";
 import logoVideoWebm from "../assets/vedio/kaira_logo_ved.webm";
-import logoVideoMov from "../assets/vedio/Kaira_logo_mac.mp4";
+import logoVideoMov from "../assets/vedio/K2.mp4";  
 import background from "../assets/images/Hero-background.png";
 import ImageSlider from "./ImageSlider";
 
@@ -138,16 +138,19 @@ export default function Hero() {
 
       {/* Main content */}
       <div className={`z-10 max-w-5xl ${textTransitionClass}`}>
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="h-[150px] sm:h-[200px] md:h-[300px] w-auto object-contain mx-auto"
-        >
-          <source src={logoVideoWebm} type="video/webm" />
-          <source src={logoVideoMov} type='video/mp4; codecs="hvc1"' />
-        </video>
+                <video
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="h-[150px] sm:h-[200px] md:h-[300px] w-auto object-contain mx-auto"
+                >
+                  {/* Safari (HEVC) first */}
+                  <source src={logoVideoMov} type='video/mp4; codecs="hvc1"' />
+                  {/* Chrome/Firefox fallback */}
+                  <source src={logoVideoWebm} type="video/webm" />
+                  Your browser does not support the video tag.
+                </video>
 
 
         <h2 className="font-primary text-base sm:text-xl md:text-2xl lg:text-3xl text-brown mt-4 tracking-tighter px-4 sm:px-10">

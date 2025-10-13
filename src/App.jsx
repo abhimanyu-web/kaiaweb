@@ -20,7 +20,6 @@ function App() {
       <Coffee />
       <Store />
       <Envelope />
-         <VideoAlphaTest />
       <GetInTouch />
       <Footer />
     </>
