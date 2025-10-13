@@ -1,8 +1,12 @@
+import K1 from '../assets/vedio/K1.mov';
+import K2 from '../assets/vedio/K2.mp4';
+import K3 from '../assets/vedio/K3.mov';
+
 export default function VideoAlphaTest() {
   const videos = [
-    { id: "k1", src: "/assets/vedio/K1.mov", label: "K1 — MOV (ProRes 4444, 83 MB)" },
-    { id: "k2", src: "/assets/vedio/K2.mp4", label: "K2 — MP4 (HEVC, 4 MB)" },
-    { id: "k3", src: "/assets/vedio/K3.mov", label: "K3 — MOV (H.265, 4 MB)" },
+    { id: "k1", src: K1, type: "video/quicktime", label: "K1 — MOV (ProRes/H.265?)" },
+    { id: "k2", src: K2, type: "video/mp4", label: "K2 — MP4 (HEVC?)" },
+    { id: "k3", src: K3, type: "video/quicktime", label: "K3 — MOV (H.265)" },
   ];
 
   return (
@@ -12,12 +16,12 @@ export default function VideoAlphaTest() {
       </h1>
 
       <div className="flex flex-wrap justify-center gap-10">
-        {videos.map((video) => (
+        {videos.map((v) => (
           <div
-            key={video.id}
+            key={v.id}
             className="bg-white/10 backdrop-blur-md p-6 rounded-2xl shadow-lg flex flex-col items-center"
           >
-            <h2 className="text-lg font-semibold text-white mb-4">{video.label}</h2>
+            <h2 className="text-lg font-semibold text-white mb-4">{v.label}</h2>
 
             <video
               autoPlay
@@ -27,10 +31,9 @@ export default function VideoAlphaTest() {
               width="320"
               height="320"
               className="rounded-xl border border-white/30 object-contain bg-transparent"
+              onError={(e) => console.log('video load error', v.id, e)}
             >
-              <source src={video.src} type='video/mp4; codecs="hvc1"' />
-              <source src={video.src} type="video/quicktime" />
-              <source src={video.src} type="video/webm" />
+              <source src={v.src} type={v.type} />
               Your browser does not support the video tag.
             </video>
           </div>
