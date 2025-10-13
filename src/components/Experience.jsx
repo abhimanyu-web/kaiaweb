@@ -45,12 +45,12 @@ export default function Experience() {
         <div className='w-full md:w-1/2 px-6 sm:px-8 md:px-10 lg:px-16'>
           {[
             {
-              title: "Tradition meets comfort",
-              subtitle: "Old-school charm, new-age ease.",
+              title: "Price Starts at ₹849 Per Sqft",
+              subtitle: "Because the price of a match does't define the value of Fire.",
             },
             {
-              title: "It feels like home",
-              subtitle: "Even if you’ve just arrived.",
+              title: "Villas, starting at ₹2.4Cr",
+              subtitle: "Your Luxury Home awaits.",
             },
             {
               title: "Nature does the heavy lifting",
