@@ -8,6 +8,7 @@ import GetInTouch from './components/GetInTouch';
 import Footer from './components/Footer';
 import Logo from './components/Logo';
 import Envelope from './components/Envelope';
+import VideoAlphaTest from './components/VideoAlphaTest';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Coffee />
       <Store />
       <Envelope />
+         <VideoAlphaTest />
       <GetInTouch />
       <Footer />
     </>
