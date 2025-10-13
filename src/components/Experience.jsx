@@ -1,6 +1,6 @@
 import { useState } from "react";
-import image from "../assets/images/kairaExperience.png";
-import bgimg from "../assets/images/experience-background.png";
+import image from "../assets/images/kairaExperience.webp";
+import bgimg from "../assets/images/experience-background.webp";
 import Form from "./Form";
 
 export default function Experience() {

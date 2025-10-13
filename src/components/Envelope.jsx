@@ -3,17 +3,17 @@ import backGround1 from "../assets/images/backGround1.webp";
 import backGround2 from "../assets/images/backGround2.webp";
 import backGround3 from "../assets/images/backGround3.webp";
 import backGround4 from "../assets/images/backGround4.webp";
-import image1 from "../assets/images/envelope.png";
-import image2 from "../assets/images/envelope2.png";
-import image3 from "../assets/images/envelope3.png";
-import image4 from "../assets/images/envelope4.png";
-import textBackground from "../assets/images/textBackground.png";
+import image1 from "../assets/images/envelope.webp";
+import image2 from "../assets/images/envelope2.webp";
+import image3 from "../assets/images/envelope3.webp";
+import image4 from "../assets/images/envelope4.webp";
+import textBackground from "../assets/images/textBackground.webp";
 import arrowleft from "../assets/images/arrow-left.webp";
 import arrowright from "../assets/images/arrow-right.webp";
-import food from "../assets/images/mfood.png";
-import home from "../assets/images/mhome.png";
-import traditions from "../assets/images/mtraditions.png";
-import wellness from "../assets/images/mwellness.png";
+import food from "../assets/images/mfood.webp";
+import home from "../assets/images/mhome.webp";
+import traditions from "../assets/images/mtraditions.webp";
+import wellness from "../assets/images/mwellness.webp";
 
 const prevSlides = () => {
   const isFirstSlide = currentIndex === 0;

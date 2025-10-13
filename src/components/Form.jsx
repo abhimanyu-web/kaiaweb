@@ -1,5 +1,5 @@
 import { useActionState } from "react";
-import image from "../assets/images/fromImage.png";
+import image from "../assets/images/fromImage.webp";
 import ModalBase from "./ModalBase";
 
 export default function Form({ isFormOpen, isFormClose }) {
