@@ -174,10 +174,8 @@ export default function Hero() {
           playsInline
           className="h-[150px] sm:h-[200px] md:h-[300px] w-auto object-contain mx-auto"
         >
-          <source src={logoVideoMov} type="video/mp4" />
           <source src={logoVideoWebm} type="video/webm" />
-          
-          
+          <source src={logoVideoMov} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
