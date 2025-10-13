@@ -1,8 +1,8 @@
 export default function VideoAlphaTest() {
   const videos = [
-    { id: "k1", src: "/assets/vedio/k1.mov", label: "K1 — MOV (ProRes 4444, 83 MB)" },
-    { id: "k2", src: "/assets/vedio/k2.mp4", label: "K2 — MP4 (HEVC, 4 MB)" },
-    { id: "k3", src: "/assets/vedio/k3.mov", label: "K3 — MOV (H.265, 4 MB)" },
+    { id: "k1", src: "/assets/vedio/K1.mov", label: "K1 — MOV (ProRes 4444, 83 MB)" },
+    { id: "k2", src: "/assets/vedio/K2.mp4", label: "K2 — MP4 (HEVC, 4 MB)" },
+    { id: "k3", src: "/assets/vedio/K3.mov", label: "K3 — MOV (H.265, 4 MB)" },
   ];
 
   return (
