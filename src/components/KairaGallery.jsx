@@ -3,12 +3,14 @@ import { Images, Mountain, X } from "lucide-react";
 import bgimg from "../assets/images/experience-background.webp";
 
 // Import your images
-import render1 from "../assets/images/kaira/Kaira7.webp";
-import render2 from "../assets/images/kaira/Kaira2.webp";
-import render3 from "../assets/images/kaira/Kaira3.webp";
-import render6 from "../assets/images/kaira/Kaira4.webp";
-import render4 from "../assets/images/kaira/Kaira5.webp";
-import render5 from "../assets/images/kaira/Kaira6.webp";
+import render1 from "../assets/images/Kaira/Kaira1.webp";
+import render2 from "../assets/images/Kaira/Kaira2.webp";
+import render3 from "../assets/images/Kaira/Kaira3.webp";
+import render4 from "../assets/images/Kaira/Kaira4.webp";
+import render5 from "../assets/images/Kaira/Kaira5.webp";
+import render6 from "../assets/images/Kaira/Kaira6.webp";
+import render7 from "../assets/images/Kaira/Kaira7.webp";
+import render8 from "../assets/images/Kaira/Kaira8.webp";
 import site1 from "../assets/images/kaira/Kaira1.webp";
 import site2 from "../assets/images/kaira/kaira-site2.webp";
 import site3 from "../assets/images/kaira/kaira-site3.webp";
@@ -21,7 +23,7 @@ export default function KairaGallery() {
   const [activeTab, setActiveTab] = useState("renders");
   const [selectedImage, setSelectedImage] = useState(null);
 
-  const renders = [render6, render4, render5, render1, render2, render3];
+  const renders = [render6, render4, render5, render7, render2, render3];
   const siteImages = [site1,site2, site3, site4, site5, site6, ];
 
   const images = activeTab === "renders" ? renders : siteImages;
