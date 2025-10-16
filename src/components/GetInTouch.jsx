@@ -9,7 +9,7 @@ export default function InvestmentSection() {
   const highlights = [
     {
       icon: <Home className="w-10 h-10 text-brown-light" />,
-      title: "Villas & Farmplots from ₹84.5 Lakhs*",
+      title: "Farmplots starts from ₹84.5 Lakhs*",
       copy: "Own a luxurious retreat that doubles as a performing asset.",
     },
     {
