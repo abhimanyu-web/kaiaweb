@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 import Logo from './components/Logo';
 import Envelope from './components/Envelope';
 import AmenitiesSection from "./components/AmenitiesSection";
-import KairaGallery from './components/kairaGallery';
+import KairaGallery from './components/KairaGallery';
 
 function App() {
 
