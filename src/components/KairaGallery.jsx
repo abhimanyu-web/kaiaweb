@@ -3,20 +3,18 @@ import { Images, Mountain, X } from "lucide-react";
 import bgimg from "../assets/images/experience-background.webp";
 
 // Import your images
-import render1 from "../assets/images/Kaira/Kaira1.webp";
 import render2 from "../assets/images/Kaira/Kaira2.webp";
 import render3 from "../assets/images/Kaira/Kaira3.webp";
 import render4 from "../assets/images/Kaira/Kaira4.webp";
 import render5 from "../assets/images/Kaira/Kaira5.webp";
 import render6 from "../assets/images/Kaira/Kaira6.webp";
 import render7 from "../assets/images/Kaira/Kaira7.webp";
-import render8 from "../assets/images/Kaira/Kaira8.webp";
-import site1 from "../assets/images/kaira/Kaira1.webp";
-import site2 from "../assets/images/kaira/kaira-site2.webp";
-import site3 from "../assets/images/kaira/kaira-site3.webp";
-import site4 from "../assets/images/kaira/kaira-site4.webp";
-import site5 from "../assets/images/kaira/kaira-site5.webp";
-import site6 from "../assets/images/kaira/kaira-site6.webp";
+import site1 from "../assets/images/Kaira/Kaira1.webp";
+import site2 from "../assets/images/Kaira/kaira-site2.webp";
+import site3 from "../assets/images/Kaira/kaira-site3.webp";
+import site4 from "../assets/images/Kaira/kaira-site4.webp";
+import site5 from "../assets/images/Kaira/kaira-site5.webp";
+import site6 from "../assets/images/Kaira/kaira-site6.webp";
 
 
 export default function KairaGallery() {
