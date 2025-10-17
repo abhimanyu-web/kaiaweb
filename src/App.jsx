@@ -10,6 +10,7 @@ import Logo from './components/Logo';
 import Envelope from './components/Envelope';
 import AmenitiesSection from "./components/AmenitiesSection";
 import KairaGallery from './components/KairaGallery';
+import WhoWeAreSlide from './components/WhoWeAreSlide';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <Coffee />
       <Store />
       <KairaGallery />
+      <WhoWeAreSlide />
       <Envelope />
       <GetInTouch />
       <Footer />
