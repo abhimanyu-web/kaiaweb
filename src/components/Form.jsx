@@ -73,40 +73,51 @@ export default function Form({ isFormOpen, isFormClose }) {
   }
 
   // 5. verifyOtp now sends ALL data (from state) + the OTP
-  async function verifyOtp() {
-    setLoading(true);
-    setMessage("");
+async function verifyOtp() {
+  setLoading(true);
+  setMessage("");
 
-    try {
-      // Combine stored form data with the new OTP
-      const payload = {
-        ...formData, // { name, email, phoneNumber, pageUrl }
-        otp: otp,
-      };
+  try {
+    // Combine stored form data with the new OTP
+    const payload = {
+      ...formData, // { name, email, phoneNumber, pageUrl }
+      otp: otp,
+    };
 
-      // Use the endpoint path for your SECOND handler
-      const res = await fetch("/api/verify-otp", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
+    // Call your OTP verification endpoint
+    const res = await fetch("/api/verify-otp", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload),
+    });
+
+    const data = await res.json();
+
+    if (data.success) {
+      setStep(3);
+      setMessage("Thank you for your response! We will reach you soon.");
+
+      // ✅ Fire GTM event
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: "otpVerificationSuccess",
+        name: formData.name,
+        phoneNumber: formData.phoneNumber,
+        email: formData.email,
+        pageUrl: formData.pageUrl,
       });
 
-      const data = await res.json();
-
-      if (data.success) {
-        setStep(3);
-        // This success message comes from your step 2 (verify-otp)
-        setMessage("Thank you for your response! We will reach you soon.");
-      } else {
-        setMessage(data.message || "Invalid OTP. Please try again.");
-      }
-    } catch (err) {
-      console.error(err);
-      setMessage("Something went wrong during verification.");
-    } finally {
-      setLoading(false);
+    } else {
+      setMessage(data.message || "Invalid OTP. Please try again.");
     }
+  } catch (err) {
+    console.error(err);
+    setMessage("Something went wrong during verification.");
+  } finally {
+    setLoading(false);
   }
+}
+
 
   return (
     <ModalBase isOpen={isFormOpen} onClose={isFormClose}>
