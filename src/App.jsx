@@ -11,7 +11,6 @@ import Envelope from './components/Envelope';
 import AmenitiesSection from "./components/AmenitiesSection";
 import KairaGallery from './components/KairaGallery';
 import WhoWeAreSlide from './components/WhoWeAreSlide';
-<<<<<<< HEAD
 import Welcome from './components/Welcome';
 import WhyChooseKaira from './components/Whychoosekaira';
 import WhyKaira from './components/WhyKaira';
@@ -20,16 +19,12 @@ import LayoutandConfig from './components/LayoutandConfig';
 import Awards from './components/awards';
 import Testimonials from './components/testimonials';
 import SocialMediaBar from './components/socialmediabar';
-=======
-
->>>>>>> 5d85878ac255a0658cf5deb25f797d708207bbc4
 function App() {
 
   return (
     <>
       <Hero/>
       <Logo />
-<<<<<<< HEAD
       <Welcome />
       <GetInTouch />
       <WhyKaira />
@@ -48,17 +43,6 @@ function App() {
       <WhatsAppButton/>
       <SocialMediaBar />
       
-=======
-      <Experience/>
-      <AmenitiesSection />
-      <Coffee />
-      <Store />
-      <KairaGallery />
-      <WhoWeAreSlide />
-      <Envelope />
-      <GetInTouch />
-      <Footer />
->>>>>>> 5d85878ac255a0658cf5deb25f797d708207bbc4
     </>
   )
 }
