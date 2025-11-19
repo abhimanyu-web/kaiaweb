@@ -72,16 +72,6 @@ export default function Footer() {
                   </a>
                 </td>
               </tr>
-
-              <tr>
-                <td className="border-t border-r border-light p-3 font-normal align-top">
-                  Address
-                </td>
-                <td className="border-t border-light p-3">
-                  #200, 4th floor, 10th cross, CBI Main Road, Ganganagar,
-                  Bangalore 560032.
-                </td>
-              </tr>
             </tbody>
           </table>
         </div>
